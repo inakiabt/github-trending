@@ -21,9 +21,13 @@ func main() {
 		createMarkDown(dateString, filename)
 
 		//TODO: use goroutinez
-		scrape("objective-c", filename)
-		scrape("go", filename)
+		scrape("", filename) // all
+		scrape("php", filename)
 		scrape("javascript", filename)
+		scrape("python", filename)
+		scrape("bash", filename)
+		scrape("scala", filename)
+		scrape("go", filename)
 
 		gitPull()
 		gitAddAll()
